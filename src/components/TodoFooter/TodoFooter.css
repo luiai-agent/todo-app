@@ -1,0 +1,60 @@
+.todo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.todo-footer__count {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  min-width: 60px;
+}
+
+.todo-footer__count strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.todo-footer__filters {
+  display: flex;
+  gap: 4px;
+}
+
+.todo-footer__filter-btn {
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.todo-footer__filter-btn:hover {
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.todo-footer__filter-btn--active {
+  color: var(--color-primary);
+  border-color: var(--color-primary-light);
+  background: var(--color-primary-light);
+}
+
+.todo-footer__clear {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.todo-footer__clear:hover {
+  color: var(--color-danger);
+  background: #fef2f2;
+}
